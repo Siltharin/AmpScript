@@ -27,7 +27,7 @@ InsertData('SMS Responses', 'mobile', MOBILE_NUMBER, 'keyword', MSG(0).VERB, 're
 var @response
 var @mobileNumber
 
-set @msg = "Hello"
+set @msg = "Hello World!"
 
 set @response = v([MSG(0)])
 
