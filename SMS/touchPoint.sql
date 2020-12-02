@@ -1,2 +1,2 @@
-SELECT FROM lead_salesforce
+SELECT a.id FROM lead_salesforce
 
