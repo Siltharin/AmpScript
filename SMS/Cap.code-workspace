@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../../modulo02"
+		},
+		{
+			"name": "MCFS_: my connection 1",
+			"uri": "mcfs:/"
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,41 @@
+%% [
+
+var @mobileNumber, @resposta, @createdDate, @mobileNumber_CreatedDate, @message
+
+set @mobileNumber = MOBILE_NUMBER
+set @resposta = v([MSG(0)])
+set @createdDate = NOW())
+set @mobileNumber_CreatedDate = concat(@mobileNumber, '_', @createdDate)
+set @message = 'Sicredi - Boa tarde, respo '
+InsertData('db_respostas','celular_CreatedDate',@mobileNumber_CreatedDate, 'resposta', @resposta, 'celular', @mobileNumber,'CreatedDate',NOW()))
+
+]%%
+
+%%=v(@message)=%%
+
+
+
+%%[
+
+InsertData('SMS Responses', 'mobile', MOBILE_NUMBER, 'keyword', MSG(0).VERB, 'response', MSG(0).NOUNS)
+
+]%%
+
+
+
+%%[  var @msg
+var @response
+var @mobileNumber
+
+set @msg = "Hello"
+
+set @response = v([MSG(0)])
+
+set @mobileNumber = MOBILE_NUMBER
+
+
+InsertData('db_respostas', 'response', @response, 'number', @mobileNumber)
+
+
+            ]%%
+%%=v(@msg)=%%
